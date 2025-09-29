@@ -19,7 +19,7 @@ class Program
                 }
                 else
                 {
-                    Console.Write(i + ","); 
+                    Console.Write(i + ",");
                 }
             }
         }
