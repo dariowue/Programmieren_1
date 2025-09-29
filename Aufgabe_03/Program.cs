@@ -4,6 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        byte i = 1;
+
+        while (i <= 10)
+        {
+            Console.WriteLine(i);
+            i += 1;
+        }
     }
 }
