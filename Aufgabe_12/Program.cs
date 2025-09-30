@@ -12,8 +12,16 @@ class Program
         string input = Console.ReadLine();
         string[] inputArray  = input.Split(',');
         int [] intArray = Array.ConvertAll(inputArray, int.Parse);
+        
+        SumUp(intArray);
+        
+    }
+    
+    static int[] SumUp(int[] intArray) 
+    {    
+        int[] result = new int[intArray.Length]; 
         int sum = 0;
-
+        
         for (int i = 0; i < intArray.Length; i++)
         {
             while (i <= intArray.Length - 1)
@@ -21,17 +29,18 @@ class Program
                 sum = intArray[i] + sum;
                 
                 if(i != intArray.Length -1)
-                {
-                    Console.Write("[" + i + "]" + " -> " + sum + ", ");
-                    i++;
-                }
-                else
-                {
-                    Console.Write("[" + i + "]" + " -> " + sum);
-                    i++;
-                }
+            {
+                Console.Write("[" + i + "]" + " -> " + sum + ", ");
+                i++;
+            }
+            else
+            {
+                Console.Write("[" + i + "]" + " -> " + sum);
+                i++;
             }
         }
+     }
+        return result; 
     }
     
 }
