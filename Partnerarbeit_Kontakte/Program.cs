@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
+//Gruppenmitglieder: Dario W. & Benjamin K.
 namespace Partnerarbeit_Kontakte;
 
 class Program
