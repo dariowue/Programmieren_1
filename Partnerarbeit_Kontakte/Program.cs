@@ -11,6 +11,8 @@ class Program
 
     static void Main(string[] args)
     {
+        Startbildschirm();
+        
         Console.WriteLine("*********************");
         Console.WriteLine("* Kontakte erfassen *");
         Console.WriteLine("*********************");
@@ -99,5 +101,35 @@ class Program
                 CheckKeyVoroderNachname();
             }
         }
+        
+        static void Startbildschirm()
+        {
+            string asciiArt = @" 
+
+            .*@@@@@@@@@@@@@@@@@@@@@@@@@@*.
+            %@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            @@@@@@@@@@@%.    .@@@@@@@@@@@@
+            @@@@@@@@@@@.      :@@@@@@@@@@@
+            @@@@@@@@@@@=      +@@@@@@@@@@@
+            @@@@@@@@@@@@%:..:%@@@@@@@@@@@@
+            @@@@@@@@@@+.:*%%+:.=@@@@@@@@@@
+            @@@@@@@@+            -@@@@@@@@
+            @@@@@@@=              :@@@@@@@
+            @@@@@@@.               @@@@@@@
+            @@@@@@@.              .@@@@@@@
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            .*@@@@@@@@@@@@@@@@@@@@@@@@@@#.
+            ";
+
+            Console.WriteLine(asciiArt);
+            Console.WriteLine("\nDrücken Sie eine beliebige Taste, um die Kontakterfassung zu starten");
+
+            Console.ReadKey(true);   
+            Console.Clear(); 
+        }
+
 
     }
